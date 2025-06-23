@@ -14,6 +14,6 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
-        }, 1500); // 1.5 másodperc splash screen
+        }, 1500); //1.5s
     }
 }
