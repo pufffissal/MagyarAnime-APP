@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         WindowManager.LayoutParams.FLAG_FULLSCREEN);
             }
 
-            // Tájolás landscape-re fullscreen alatt
+            //FScreen
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
 
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         public void onHideCustomView() {
             if (mCustomView == null) return;
 
-            // Visszaállítjuk a UI-t
+           
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 customViewContainer.setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
             } else {
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 customViewCallback = null;
             }
 
-            // Visszaállítjuk az orientációt portréra
+            
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
     }
